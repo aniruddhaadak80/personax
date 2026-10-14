@@ -1,0 +1,14 @@
+{
+  "name": "@personax/config",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "typecheck": "echo ok",
+    "lint": "echo ok"
+  },
+  "exports": {
+    "./tsconfig": "./tsconfig.json",
+    "./tsconfig.react": "./tsconfig.react.json"
+  }
+}

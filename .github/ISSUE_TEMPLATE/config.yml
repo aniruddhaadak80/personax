@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Personax discussions
+    url: https://github.com/aniruddhaadak80/personax/discussions
+    description: Ask questions, share scenarios, propose worlds
+  - name: Security disclosure
+    url: https://github.com/aniruddhaadak80/personax/security/advisories/new
+    description: Report a vulnerability privately

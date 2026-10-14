@@ -1,0 +1,12 @@
+{
+  "$schema": "https://json.schemastore.org/tsconfig",
+  "extends": "./tsconfig.base.json",
+  "compilerOptions": {
+    "paths": {
+      "@personax/core": ["../core/src/index.ts"],
+      "@personax/seed": ["../seed/src/index.ts"],
+      "@personax/sdk": ["../sdk/src/index.ts"],
+      "@personax/ui": ["../ui/src/index.ts"]
+    }
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "extends": "../../tsconfig.base.json",
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["./*"],
+      "@personax/core": ["../core/src/index.ts"],
+      "@personax/seed": ["../seed/src/index.ts"],
+      "@personax/sdk": ["../sdk/src/index.ts"],
+      "@personax/ui": ["../ui/src/index.ts"]
+    },
+    "types": ["node", "vitest/globals"],
+    "allowJs": true,
+    "incremental": true,
+    "jsx": "preserve",
+    "plugins": [
+      {
+        "name": "next"
+      }
+    ]
+  },
+  "include": ["**/*.ts", "**/*.tsx", "next-env.d.ts", ".next/types/**/*.ts"],
+  "exclude": ["node_modules", ".next", "out", "dist"]
+}
