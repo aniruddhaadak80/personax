@@ -16,14 +16,14 @@ license: MIT
 </p>
 
 <p align="center">
-  <a href="https://personax.vercel.app/actions/workflows/ci.yml"><img src="https://img.shields.io/badge/ci-turbo%20%7E%20green-2dd4bf" alt="build" /></a>
+  <a href="https://personax-eta.vercel.app/actions/workflows/ci.yml"><img src="https://img.shields.io/badge/ci-turbo%20%7E%20green-2dd4bf" alt="build" /></a>
   <img src="https://img.shields.io/badge/license-MIT-8b5cf6" alt="license" />
   <img src="https://img.shields.io/badge/loc-1.0M%2B%20target-f59e0b" alt="loc" />
-  <a href="https://personax.vercel.app"><img src="https://img.shields.io/badge/demo-live-2dd4bf" alt="live demo" /></a>
+  <a href="https://personax-eta.vercel.app"><img src="https://img.shields.io/badge/demo-live-2dd4bf" alt="live demo" /></a>
 </p>
 
 <p align="center">
-  <a href="https://personax.vercel.app"><strong>Try the live demo →</strong></a>
+  <a href="https://personax-eta.vercel.app"><strong>Try the live demo →</strong></a>
 </p>
 
 ---
