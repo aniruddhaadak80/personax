@@ -22,3 +22,5 @@ Cargo.lock
 *.tsbuildinfo
 playwright-report
 test-results
+
+.vercel
