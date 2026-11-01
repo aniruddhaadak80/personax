@@ -91,7 +91,7 @@ export function AppShell({ children }: { children: ReactNode }) {
               variant="ghost"
               size="sm"
               onClick={() => setPaletteOpen(true)}
-              aria-label="Open command palette (Cmd+K)"
+              aria-label="Open command palette ⌘K"
             >
               <Wand2 className="h-4 w-4" aria-hidden />
               <kbd className="hidden rounded border border-charcoal bg-abyss px-1.5 py-0.5 font-mono text-[10px] text-mist sm:inline">

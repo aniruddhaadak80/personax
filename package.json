@@ -22,10 +22,10 @@
     "ci": "bun run typecheck && bun run lint && bun run test && bun run build"
   },
   "devDependencies": {
-    "@biomejs/biome": "^2.0.6",
-    "@playwright/test": "^1.64.0",
+    "@biomejs/biome": "^2.6.3",
+    "@playwright/test": "^1.64.1",
     "@types/node": "^22.15.0",
-    "turbo": "^2.5.4",
+    "turbo": "^2.11.10",
     "typescript": "^5.8.3",
     "vitest": "^3.2.4"
   },
