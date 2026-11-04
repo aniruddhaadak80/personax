@@ -52,22 +52,19 @@ func (h *Hub) subscribe() chan Event {
 func (h *Hub) unsubscribe(ch chan Event) {
 	h.mu.Lock()
 	delete(h.clients, ch)
-	h.mu.Unlock()
 	close(ch)
+	h.mu.Unlock()
 }
 
 func (h *Hub) publish(ev Event) {
 	h.mu.Lock()
+	defer h.mu.Unlock()
 	h.history = append(h.history, ev)
 	if len(h.history) > 10_000 {
 		h.history = h.history[len(h.history)-10_000:]
 	}
-	clients := make([]chan Event, 0, len(h.clients))
+	// Keep sends synchronized with unsubscribe closing client channels.
 	for ch := range h.clients {
-		clients = append(clients, ch)
-	}
-	h.mu.Unlock()
-	for _, ch := range clients {
 		select {
 		case ch <- ev:
 		default: // slow consumer: drop rather than block the publisher
